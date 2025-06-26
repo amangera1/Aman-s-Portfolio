@@ -1,0 +1,41 @@
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end) forwards;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
+.gradient-text {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.project-card:hover .project-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+.project-overlay {
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.aspect-square img{
+    object-fit: cover;
+}
